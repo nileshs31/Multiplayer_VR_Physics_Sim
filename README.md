@@ -103,3 +103,11 @@ An on-screen keyboard is implemented to enable text input for VR users.
 ## Unit Testing Performed
 ![image](https://github.com/user-attachments/assets/b12bd18f-73f6-4c5a-8926-0a8d1d0fbe75)
 
+
+## Simple Console Application Scene in Unity 
+- To demonstrate interacting with the simulation without UI
+- Object Free Falling -
+![image](https://github.com/user-attachments/assets/c686a66c-a6fa-4576-8503-083c4198b372)
+- Object with impulse applied on X and Z by pressing 'D' and 'W'
+![image](https://github.com/user-attachments/assets/ecf8429e-a851-4aab-914c-599ea6e48c8a)
+
