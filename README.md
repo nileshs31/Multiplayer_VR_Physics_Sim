@@ -99,5 +99,7 @@ An on-screen keyboard is implemented to enable text input for VR users.
 - Type messages using the on-screen keyboard.
 - Messages are broadcasted to all players in the session.
 
-![Unit Testing Performed](https://github.com/user-attachments/assets/b12bd18f-73f6-4c5a-8926-0a8d1d0fbe75)
+
+## Unit Testing Performed
+![image](https://github.com/user-attachments/assets/b12bd18f-73f6-4c5a-8926-0a8d1d0fbe75)
 
