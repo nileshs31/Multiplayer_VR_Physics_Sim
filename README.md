@@ -24,13 +24,13 @@ This project simulates physics objects within a **multiplayer VR environment** u
 ---
 
 ## Features
- **Custom Gravity Simulation** - Objects experience gravity and move accordingly.
- **Collision Detection** - Objects detect collisions using `OverlapSphere`.
- **Bounce Mechanics** - Objects bounce based on a configurable efficiency factor.
- **Impulse Forces** - Objects can receive impulses along the **X and Z axes**.
- **Network Synchronization** - Position and velocity are synced across clients.
- **Reset Mechanism** - Objects reset after bouncing or leaving the bounds.
- **Multiplayer UI and Chat System** - PlayerCanvas handles network interactions, client tracking, and an in-game chat system with an on-screen keyboard.
+ - **Custom Gravity Simulation** - Objects experience gravity and move accordingly.
+ - **Collision Detection** - Objects detect collisions using `OverlapSphere`.
+ - **Bounce Mechanics** - Objects bounce based on a configurable efficiency factor.
+ - **Impulse Forces** - Objects can receive impulses along the **X and Z axes**.
+ - **Network Synchronization** - Position and velocity are synced across clients.
+ - **Reset Mechanism** - Objects reset after bouncing or leaving the bounds.
+ - **Multiplayer UI and Chat System** - PlayerCanvas handles network interactions, client tracking, and an in-game chat system with an on-screen keyboard.
 
 ---
 
@@ -64,13 +64,13 @@ Velocity = new Vector3(impulseForce / Mass, Velocity.y, Velocity.z);
 
 ## Multiplayer Interaction with PlayerCanvas
 
--Network Clients Tracking: The PlayerCanvas tracks the number of connected players and updates the UI accordingly.
--Each player's position and movements are synced across all clients in real-time.
--Chat System: Players can open the chat panel by clicking the Chat button.
---The chat system allows sending and receiving messages among networked clients.
---An on-screen keyboard is implemented to enable text input for VR users.
--Syncing Position and Velocity: Every player's position and velocity updates are sent and received via Netcode RPCs.
--When a new player joins, they receive the latest state of all objects in the environment.
+- Network Clients Tracking: The PlayerCanvas tracks the number of connected players and updates the UI accordingly.
+- Each player's position and movements are synced across all clients in real-time.
+- Chat System: Players can open the chat panel by clicking the Chat button.
+The chat system allows sending and receiving messages among networked clients.
+An on-screen keyboard is implemented to enable text input for VR users.
+- Syncing Position and Velocity: Every player's position and velocity updates are sent and received via Netcode RPCs.
+- When a new player joins, they receive the latest state of all objects in the environment.
 
 
 ## Assumptions
@@ -87,12 +87,12 @@ Velocity = new Vector3(impulseForce / Mass, Velocity.y, Velocity.z);
 -Objects fall due to gravity and interact based on their physics properties.
 -When hitting the ground, bouncing objects bounce, while others reset.
 
-# Applying Impulse
+- **Applying Impulse**
 
 -Press the on-screen button to apply an impulse.
 -The object will move in the corresponding direction.
 
-##Using the Chat System
+## Using the Chat System
 
 -Click the Chat button to open the chat panel.
 -Type messages using the on-screen keyboard.
