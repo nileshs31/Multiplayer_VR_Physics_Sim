@@ -20,6 +20,7 @@ This project simulates physics objects within a **multiplayer VR environment** u
 - Impulse forces
 - Custom gravity
 - Multiplayer synchronization
+- Multiplayer chat
 
 ---
 
