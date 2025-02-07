@@ -18,10 +18,11 @@ public class NetworkConnect : MonoBehaviour
 {
     [SerializeField]
     UnityTransport transport;
-    public const int MaxPlayers = 5;
+    public const int MaxPlayers = 100;
 
     private Lobby connectedLobby;
     private const string joinCode = "j";
+
     private async void Awake()
     {
         if (transport == null)
@@ -42,6 +43,8 @@ public class NetworkConnect : MonoBehaviour
             // for ParrelSync
             if (ClonesManager.IsClone()) options.SetProfile(ClonesManager.GetArgument());
             else options.SetProfile("Primary");
+
+            Debug.Log(ClonesManager.GetArgument());
 #endif
 
             await UnityServices.InitializeAsync(options);

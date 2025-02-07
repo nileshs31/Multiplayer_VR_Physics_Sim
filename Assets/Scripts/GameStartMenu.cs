@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
-
+#if UNITY_EDITOR
+using ParrelSync;
+#endif
 public class GameStartMenu : MonoBehaviour
 {
     [Header("UI Pages")]
@@ -14,13 +17,16 @@ public class GameStartMenu : MonoBehaviour
     public Button aboutButton;
     public Button quitButton;
 
+    public TextMeshProUGUI userNameField;
+
+
     public List<Button> returnButtons;
 
     // Start is called before the first frame update
     void Start()
     {
         EnableMainMenu();
-
+        GenerateUsernameAtStart();
         //Hook events
         startButton.onClick.AddListener(StartGame);
         aboutButton.onClick.AddListener(EnableAbout);
@@ -31,10 +37,31 @@ public class GameStartMenu : MonoBehaviour
             item.onClick.AddListener(EnableMainMenu);
         }
     }
+    public void GenerateUsernameAtStart()
+    {
+        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        char[] word = new char[5];
+        string usernameGenerated = "";
+
+        for (int i = 0; i < 5; i++)
+        {
+            word[i] = chars[Random.Range(0,chars.Length)];
+        }
+        usernameGenerated = new string(word);
+        userNameField.text = usernameGenerated;
+        var parrelarg = "";
+#if UNITY_EDITOR
+        parrelarg = ClonesManager.GetArgument();
+#endif
+
+        PlayerPrefs.SetString(parrelarg+"username", usernameGenerated);
+        UnityEngine.Debug.Log(PlayerPrefs.GetString(parrelarg + "username"));
+    }
+
 
     public void QuitGame()
     {
-        Application.Quit();
+        UnityEngine.Application.Quit();
     }
 
     public void StartGame()
