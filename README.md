@@ -35,6 +35,11 @@ This project simulates physics objects within a **multiplayer VR environment** u
 
 ---
 
+Documentation Link - https://docs.google.com/document/d/1Dw3qvIaaC0cd_zcrrOcxdZvCsRglOnCxddgbUn-EDxk/edit?usp=sharing
+
+Working Video on 2 systems using ParrelSync on PC - https://drive.google.com/file/d/170mZ6uVpJjygnSr6CkNLovGm3iHC5ZB5/view?usp=drive_link
+
+
 ## Physics Model
 
 ### **Gravity**
