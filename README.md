@@ -39,6 +39,8 @@ Documentation Link - https://docs.google.com/document/d/1Dw3qvIaaC0cd_zcrrOcxdZv
 
 Working Video on 2 systems using ParrelSync on PC - https://drive.google.com/file/d/170mZ6uVpJjygnSr6CkNLovGm3iHC5ZB5/view?usp=drive_link
 
+Working Video of single player recorded on Quest (android) App - https://drive.google.com/file/d/1q13YzdaAtulQ38OTuxjgsrRL71JUGiJN/view?usp=drive_link
+
 
 ## Physics Model
 
