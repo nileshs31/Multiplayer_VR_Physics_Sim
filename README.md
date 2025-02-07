@@ -7,9 +7,10 @@ A Multiplayer VR lobby with a Custom Physics Simulation
 - [Overview](#overview)
 - [Features](#features)
 - [Physics Model](#physics-model)
-- [Multiplayer Interaction with PlayerCanvas](#multiplayer)
+- [Multiplayer Interaction with PlayerCanvas](#multiplayer-interaction-with-playercanvas)
 - [Assumptions](#assumptions)
-- [Interacting with the Simulation](#interacting)
+- [Interacting with the Simulation](#interacting-with-the-simulation)
+- [Using the Chat System](#using-the-chat-system)
 
 ---
 
@@ -20,16 +21,6 @@ This project simulates physics objects within a **multiplayer VR environment** u
 - Custom gravity
 - Multiplayer synchronization
 
-## Features
-
--Custom Gravity Simulation: Objects experience gravity and move accordingly.
--Collision Detection: Objects detect collisions using OverlapSphere.
--Bounce Mechanics: Objects bounce based on a configurable efficiency factor.
--Impulse Forces: Objects can receive impulses along the X and Z axes.
--Network Synchronization: Position and velocity are synced across clients.
--Reset Mechanism: Objects reset after bouncing or leaving the bounds.
--Multiplayer UI and Chat System: PlayerCanvas handles network interactions, client tracking, and an in-game chat system with an on-screen keyboard.
-
 ---
 
 ## Features
@@ -39,6 +30,7 @@ This project simulates physics objects within a **multiplayer VR environment** u
  **Impulse Forces** - Objects can receive impulses along the **X and Z axes**.
  **Network Synchronization** - Position and velocity are synced across clients.
  **Reset Mechanism** - Objects reset after bouncing or leaving the bounds.
+ **Multiplayer UI and Chat System** - PlayerCanvas handles network interactions, client tracking, and an in-game chat system with an on-screen keyboard.
 
 ---
 
@@ -95,7 +87,7 @@ Velocity = new Vector3(impulseForce / Mass, Velocity.y, Velocity.z);
 -Objects fall due to gravity and interact based on their physics properties.
 -When hitting the ground, bouncing objects bounce, while others reset.
 
-## Applying Impulse
+# Applying Impulse
 
 -Press the on-screen button to apply an impulse.
 -The object will move in the corresponding direction.
