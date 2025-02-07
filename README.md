@@ -74,26 +74,26 @@ An on-screen keyboard is implemented to enable text input for VR users.
 
 
 ## Assumptions
--Objects start from predefined positions.
--Network synchronization is server-authoritative.
--Gravity and impulse forces are consistent across all clients.
--Reset conditions include collisions, reaching low velocity, or going out of bounds.
+- Objects start from predefined positions.
+- Network synchronization is server-authoritative.
+- Gravity and impulse forces are consistent across all clients.
+- Reset conditions include collisions, reaching low velocity, or going out of bounds.
 
 
 ## Interacting with the Simulation
 
--Running the Simulation
--Launch Unity and start the scene.
--Objects fall due to gravity and interact based on their physics properties.
--When hitting the ground, bouncing objects bounce, while others reset.
+- Running the Simulation
+- Launch Unity and start the scene.
+- Objects fall due to gravity and interact based on their physics properties.
+- When hitting the ground, bouncing objects bounce, while others reset.
 
 - **Applying Impulse**
 
--Press the on-screen button to apply an impulse.
--The object will move in the corresponding direction.
+- Press the on-screen button to apply an impulse.
+- The object will move in the corresponding direction.
 
 ## Using the Chat System
 
--Click the Chat button to open the chat panel.
--Type messages using the on-screen keyboard.
--Messages are broadcasted to all players in the session.
+- Click the Chat button to open the chat panel.
+- Type messages using the on-screen keyboard.
+- Messages are broadcasted to all players in the session.
